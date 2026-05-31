@@ -59,7 +59,7 @@
 body {
   background-color: var(--bg-light);
   color: var(--dark-slate);
-  min-height: 100vh;
+  min-height: 125vh;
   overflow-x: hidden;
   zoom: 0.8;
   -moz-transform: scale(0.8);
@@ -142,7 +142,7 @@ a:hover {
    ========================================================================== */
 .login-container {
   display: flex;
-  min-height: 100vh;
+  min-height: 125vh;
   width: 100%;
 }
 
@@ -556,7 +556,7 @@ a:hover {
    ========================================================================== */
 .portal-container {
   display: flex;
-  min-height: 100vh;
+  min-height: 125vh;
 }
 
 /* ==================== SIDEBAR ==================== */
@@ -569,7 +569,7 @@ a:hover {
   justify-content: space-between;
   padding: 32px 24px;
   position: fixed;
-  height: 100vh;
+  height: 125vh;
   z-index: 100;
 }
 
@@ -651,10 +651,18 @@ a:hover {
 .sidebar-profile-card {
   background-color: var(--slate-100);
   border-radius: var(--radius-md);
-  padding: 16px;
+  padding: 12px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   gap: 12px;
+}
+
+.profile-avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
 }
 
 .profile-avatar-circle {
@@ -692,25 +700,30 @@ a:hover {
   background: none;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font-size: 12px;
-  font-weight: 700;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
   color: var(--slate-500);
   cursor: pointer;
-  padding: 4px 0;
-  width: fit-content;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.btn-signout svg {
+  width: 18px;
+  height: 18px;
 }
 
 .btn-signout:hover {
   color: var(--toyota-red);
+  background-color: var(--toyota-red-light);
 }
 
 /* ==================== WORKSPACE WINDOW ==================== */
 .workspace {
   margin-left: 260px;
   flex: 1;
-  min-height: 100vh;
+  min-height: 125vh;
   display: flex;
   flex-direction: column;
 }
