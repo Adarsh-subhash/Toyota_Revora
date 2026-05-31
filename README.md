@@ -108,4 +108,4 @@ npm run dev
 
 ## 👨‍💻 Submitted by
 **Adarsh Subhash**
-*(Add your specific details, university, LinkedIn, or GitHub here)*
+
