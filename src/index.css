@@ -61,6 +61,9 @@ body {
   color: var(--dark-slate);
   min-height: 100vh;
   overflow-x: hidden;
+  zoom: 0.8;
+  -moz-transform: scale(0.8);
+  -moz-transform-origin: top center;
 }
 
 input, select, button, textarea {

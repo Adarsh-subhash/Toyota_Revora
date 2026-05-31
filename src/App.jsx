@@ -275,7 +275,12 @@ export default function App() {
             }))
           };
 
-          setDb(finalDbShape);
+          setDb(prev => ({
+            ...finalDbShape,
+            currentUser: prev.currentUser,
+            currentOfficerId: prev.currentOfficerId || Object.keys(fetchedOfficers)[0] || "rohan_sharma",
+            currentAdminEmail: prev.currentAdminEmail || Object.keys(fetchedAdmins)[0] || "akira.tanaka@toyota.in"
+          }));
         }
         setDbLoading(false);
       } catch (err) {
