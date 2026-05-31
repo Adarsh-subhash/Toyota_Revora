@@ -9,8 +9,8 @@ A production-ready full-stack web app for managing and calculating tiered sales 
 ## 🔐 Test Credentials
 | Role | Passcode |
 | :--- | :--- |
-| **Admin** | `admin` |
-| **Sales Officer** | `1234` |
+| **Admin** | `akira.tanaka@toyota.in` | 'admin123' |
+| **Sales Officer** | 'rohan.sharma@toyota.in' | `sales123` |
 
 *(Note: Select your role/profile from the Login Portal. No email is required.)*
 
