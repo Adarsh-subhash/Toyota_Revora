@@ -1134,7 +1134,7 @@ export default function AdminConsole({
                 <h3 style={{ fontSize: "16px", fontWeight: "800" }}>Branch Sales Performance</h3>
                 <span className="badge badge-secondary">{Object.keys(branchSales).length} Active Hubs</span>
               </div>
-              <div className="branch-list-stack" style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <div className="branch-list-stack" style={{ display: "flex", flexDirection: "column", gap: "16px", maxHeight: "350px", overflowY: "auto", paddingRight: "8px" }}>
                 {Object.keys(branchSales).map(hub => {
                   const data = branchSales[hub];
                   const maxBranchUnits = Math.max(...Object.values(branchSales).map(b => b.units)) || 1;

@@ -143,7 +143,7 @@ export default function App() {
   const [dbLoading, setDbLoading] = useState(true);
   const [formView, setFormView] = useState("login"); 
   const [loginRole, setLoginRole] = useState("admin"); 
-  const [signupRole, setSignupRole] = useState("admin"); 
+  const [signupRole, setSignupRole] = useState("officer"); 
   const [activeMenu, setActiveMenu] = useState("dashboard"); 
   const [searchQuery, setSearchQuery] = useState("");
   const [toast, setToast] = useState({ show: false, message: "" });

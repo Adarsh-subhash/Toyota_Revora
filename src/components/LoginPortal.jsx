@@ -12,7 +12,7 @@ export default function LoginPortal({
   onForgotPassword
 }) {
   // Login Form Values
-  const [loginEmail, setLoginEmail] = useState("akira.tanaka@toyota.in");
+  const [loginEmail, setLoginEmail] = useState("admin@gmail.com");
   const [loginPassword, setLoginPassword] = useState("admin123");
 
   // Signup Form Values
@@ -30,10 +30,10 @@ export default function LoginPortal({
   // Sync default login credentials on role toggle
   useEffect(() => {
     if (loginRole === "admin") {
-      setLoginEmail("akira.tanaka@toyota.in");
+      setLoginEmail("admin@gmail.com");
       setLoginPassword("admin123");
     } else {
-      setLoginEmail("rohan.sharma@toyota.in");
+      setLoginEmail("adarshsubhashpulari2004@gmail.com");
       setLoginPassword("sales123");
     }
   }, [loginRole]);
@@ -154,17 +154,7 @@ export default function LoginPortal({
             <h2>Create Account</h2>
             <p className="subtitle">Select portal role to register as a new user.</p>
 
-            <div className="role-selector-grid">
-              <div className={`role-card ${signupRole === "admin" ? "active" : ""}`} onClick={() => setSignupRole("admin")}>
-                <div className="role-card-border"></div>
-                <div className={`role-icon-circle ${signupRole === "admin" ? "red-bg" : "grey-bg"}`}>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-6 h-6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                </div>
-                <div className="role-card-info">
-                  <h3>Admin Portal</h3>
-                  <p>Configure & review</p>
-                </div>
-              </div>
+            <div className="role-selector-grid" style={{ gridTemplateColumns: "1fr" }}>
 
               <div className={`role-card ${signupRole === "officer" ? "active" : ""}`} onClick={() => setSignupRole("officer")}>
                 <div className="role-card-border"></div>
