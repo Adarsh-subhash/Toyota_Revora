@@ -61,7 +61,7 @@ src/
 
 ### 1. Clone
 ```bash
-git clone <your-github-repo-link>
+git clone <https://github.com/Adarsh-subhash/Toyota_Revora>
 cd <your-repo-folder>
 ```
 
