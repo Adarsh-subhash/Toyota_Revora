@@ -4,7 +4,7 @@
 A production-ready full-stack web app for managing and calculating tiered sales incentives for Toyota Sales Officers. Built with React, Vite, and PostgreSQL (via Supabase).
 
 ## 🔗 Live Demo
-→ []
+→ https://toyotarevora.vercel.app/signin
 
 ## 🔐 Test Credentials
 | Role | Passcode |
